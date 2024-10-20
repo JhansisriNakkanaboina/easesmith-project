@@ -1,0 +1,45 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.topLevelContainer
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align at the top */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 30%; /* Adjust width as necessary */
+    border-bottom: 2px solid #999; /* Bottom line only */
+    margin-top: 50px; /* Adjust the margin to control vertical positioning */
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #999;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 35px; /* Space for the icon and image */
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+
+.leaf-image {
+    position: absolute;
+    right: 10px;
+    height: 24px; /* Small image size */
+    width: auto;
+}

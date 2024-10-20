@@ -1,0 +1,129 @@
+/* General Footer Styles */
+.footer {
+    background-color: #F3FFE5; /* Matches the filter background color */
+    color: grey;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter Subscription Section */
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.subscribeButton {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.subscribe-form button:hover {
+    background-color: darkgreen;
+}
+
+/* Footer Lower Section */
+.footer-lower {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-description {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-logo-description h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo-description p {
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Social Media Icons */
+
+
+.social-icons h2 {
+    margin-right: 10px;
+    color: black;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    font-size: 24px;
+    color: grey;
+    padding: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    color: black;
+}
+
+/* Horizontal Line and Copyright */
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.copyright {
+    font-size: 14px;
+    color: grey;
+}

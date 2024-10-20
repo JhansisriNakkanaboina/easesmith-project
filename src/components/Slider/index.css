@@ -1,0 +1,56 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .slider-content {
+    display: flex;
+    overflow: hidden; /* Hide overflow to create sliding effect */
+    width: 100%;
+  }
+  
+  .testimonial {
+    flex: 1 0 16%; /* Each testimonial takes up 16% of the width */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    width: 100px; /* Adjust image size */
+    height: 100px; /* Keep height same as width for round shape */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-bottom: 10px; /* Space between image and review text */
+  }
+  
+  .testimonial-review {
+    color: #999; /* Text color */
+    font-family: Poppins, sans-serif; /* Font family */
+    font-size: 18px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 24px; /* Line height */
+    text-align: center; /* Align text to the left */
+  }
+  
+  .arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  

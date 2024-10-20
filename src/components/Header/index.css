@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background for the navbar */
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000; /* Black text */
+  }
+  
+  /* Navbar Links */
+  .navbar-center ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-center ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #000; /* Black text for links */
+    font-weight: bold;
+  }
+  
+  .navbar-center ul li:hover {
+    color: #F3A939; /* Hover color for all links */
+  }
+  
+  .active-tab {
+    border-bottom: 2px solid #F3A939; /* Underline for the active tab */
+    color: #F3A939 !important; /* Ensure text color is applied */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    list-style: none;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+ }
+
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Profile and Cart Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Increased gap for better spacing */
+  }
+  
+  .profile-section,
+  .cart-section {
+    display: flex;
+    flex-direction: column; /* Icons and text stacked vertically */
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  /* Icon Styling */
+  .icon-outline {
+    color: #000; /* Set the icons to black */
+    stroke: #000; /* Outline color */
+    fill: none; /* Ensure the icons have no fill */
+  }
+
+  .dropdown-icon {
+    margin-left: 5px;
+  }
+
+  .profile-section,
+  .cart-section {
+    display: flex;
+    flex-direction: column; /* Ensures text is below the icon */
+    align-items: center; /* Centers the icon and text */
+    cursor: pointer;
+  }
+
+  

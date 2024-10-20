@@ -1,0 +1,144 @@
+/* General Styles */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  width: calc(33.33% - 20px); /* 3 products in a row */
+  overflow: hidden;
+  background-color: #fff; /* Ensure background is white */
+  position: relative;
+}
+
+.product-image {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 250px; /* Fixed height for consistent image size */
+  background-color: #fff; /* Set white background for image container */
+}
+
+.product-image img {
+  max-width: 100%; /* Ensures image takes up full width of container */
+  max-height: 100%; /* Ensures the image is contained within height */
+  object-fit: contain; /* Scale image to fit without cropping */
+}
+
+.view-product {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Button takes full width */
+  display: block; /* Ensure it takes full width */
+  text-decoration: none;
+  text-align: center;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+.heart-icon.liked {
+  color: red; /* Change heart icon to red when liked */
+}
+
+.product-details {
+  padding: 3px;
+  margin-top: 11px; /* Add margin at the top to separate from image */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details h2 {
+  font-size: 18px;
+  margin: 21px 0 5px; /* Adjust margin to give space above and below */
+}
+
+.product-description,
+.rating {
+  display: block;
+  font-size: 14px;
+  color: grey;
+}
+
+.overline {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.product-actions {
+  display: flex;
+  margin-top: 10px;
+}
+
+.add-to-cart {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.buy-rent {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination .active-page {
+  background-color: green;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 products per row on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* 1 product per row on mobile screens */
+  }
+}

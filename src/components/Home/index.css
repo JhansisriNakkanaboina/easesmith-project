@@ -1,0 +1,96 @@
+.mainClass
+{
+    margin: 21px;
+}
+
+.details {
+    height: 21px;
+    background: #165315;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;  /* Aligns the second part to the right */
+    align-items: center;
+    position: relative;  /* Set relative positioning for the container */
+    width: 100vw;
+    padding: 0 10px;
+}
+
+.detailsPart1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* Center the text horizontally */
+}
+
+.detailsPart2 {
+    display: flex;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.buttons button
+{
+    padding: 5px 15px;
+    margin: 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plantCss
+{
+    border: 2px solid #165315;
+    background-color: #165315;
+    color: #FFFFFF;
+}
+
+.potsCss
+{
+    border: 2px solid #999;
+    color: #999;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 5px;
+}
+
+.aboutContent
+{
+    color: #999;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.mainContent
+{
+    display: flex;
+}
+
+.product-sorting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px; /* Adjust width if necessary */
+    padding: 10px;
+  }
+  
+  .product-sorting p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .sort-dropdown {
+    background-color: green; /* Green background for dropdown */
+    color: white; /* White text color */
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+    

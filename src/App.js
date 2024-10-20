@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ViewProduct from './components/ViewProduct';
+import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import NotFound from './components/NotFound';  // Corrected import
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="details">
+        <div className="detailsPart1">Free Shipping on orders above 999/-</div>
+        <div className="detailsPart2">Call us on: +91 98768 05120</div>
+      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ViewProduct />} />
+        {/* Catch-all route for undefined paths */}
+        <Route path="*" element={<NotFound />} />  
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
